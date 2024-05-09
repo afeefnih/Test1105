@@ -1,0 +1,35 @@
+﻿@model Test1105.Models.Loan;
+
+@using (Html.BeginForm())
+
+
+{
+    <h1>
+        Loan Result : 
+    </h1>
+
+    <p>
+        Customer Id : @Model.id
+    </p>
+    <p>
+        Customer Name : @Model.name
+    </p>
+    <p>
+        Customer Gender : @Model.Gender
+    </p>
+    <p>
+        Customer Credit risk : @Model.CreditInput
+    </p>
+    <p>
+        Principle (RM) : @Model.Principle.ToString("n2")
+    </p>
+    <p>
+        Number of Years  : @Model.NumberOfYears.ToString()
+    </p>
+    <p>
+        Interest rate (%) : @Model.interestRate.ToString("n1")
+    </p>
+    <p>
+        Monthly Payment(RM) : @Model.MonthlyPayment.ToString("n2")
+    </p>
+}

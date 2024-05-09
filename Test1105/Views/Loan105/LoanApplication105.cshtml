@@ -1,0 +1,33 @@
+﻿@model Test1105.Models.Loan;
+
+@using (Html.BeginForm())
+{
+    <h1>
+        Loan Application Form
+    </h1>
+
+    <p>
+        Customer id : @Html.TextBoxFor(x => x.id)
+    </p>
+    <p>
+        Customer name : @Html.TextBoxFor(x => x.name)
+    </p>
+    <p>
+        Gender (M/F) : @Html.TextBoxFor(x => x.Gender)
+    </p>
+    <p>
+        Credit Risk (A/B/C): @Html.TextBoxFor(x => x.CreditInput)
+    </p>
+    <p>
+        Principle : @Html.TextBoxFor(x => x.Principle)
+    </p>
+
+    <p>
+        NUmber of Years : @Html.TextBoxFor(x=> x.NumberOfYears)
+    </p>
+
+    <p> 
+        <input type="submit" name="submit" value="submit" />
+    </p>
+
+}
